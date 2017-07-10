@@ -1,0 +1,12 @@
+<br><br><br><br>
+
+<center>
+  <h1> Name: <%= @guest.name %> </h1>
+  <h1> Occupation: <%= @guest.occupation %> </h1>
+
+  <%= button_to("View Guests", guests_path, method: :get) %> <br>
+  <%= button_to("Edit Guest", edit_guest_path(@guest), method: :get) %> <br>
+  <%= button_to("Delete Guest", @guest, method: :delete) %> <br>
+  <%= button_to("Logout", logout_path, method: :delete) %> <br>
+
+</center>

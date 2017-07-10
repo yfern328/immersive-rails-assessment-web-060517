@@ -1,0 +1,11 @@
+<%= form_for(@guest) do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field_tag :name %> <br><br>
+
+  <%= f.label :occupation %>
+  <%= f.text_field_tag :occupation %> <br><br>
+
+  <%= f.submit %>
+
+<% end %>

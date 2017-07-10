@@ -1,0 +1,10 @@
+<center>
+  <h1> All Appearances: </h1>
+  <%= button_to("Add New Appearance", new_appearance_path, method: :get) %> <br>
+  <%= button_to("Back", user_path(@user), method: :get) %> <br>
+  <%= button_to("Logout", logout_path, method: :delete) %> <br>
+</center> <br><br>
+
+<% @appearances.each do |appearance| %>
+  <li> <%= link_to("#{appearance.guest.name} | #{appearance.episode.date}", appearance_path(appearance))%> </li>
+<% end %>

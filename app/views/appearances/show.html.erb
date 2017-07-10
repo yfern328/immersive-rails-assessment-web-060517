@@ -1,0 +1,13 @@
+<br><br><br><br>
+
+<center>
+  <h1> Guest: <%= @appearance.guest.name %> </h1>
+  <h1> Episode: <%= @appearance.episode.date %> </h1>
+  <h3> Rating: <%= @appearance.rating %> </h3>
+
+  <%= button_to("View Appearances", appearances_path, method: :get) %> <br>
+  <%= button_to("Edit Appearance", edit_appearance_path(@appearance), method: :get) %> <br>
+  <%= button_to("Delete Appearance", @appearance, method: :delete) %> <br>
+  <%= button_to("Logout", logout_path, method: :delete) %> <br>
+
+</center>
